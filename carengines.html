@@ -5,8 +5,129 @@
     <title>Driveautiful</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+        /* Slideshow container */
+
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        /* Next & previous buttons */
+
+        .prev,.next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+        }
+        /* Position the "next button" to the right */
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        /* On hover, add a black background color with a little bit see-through */
+
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+        /* Caption text */
+
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        /* Number text (1/3 etc) */
+
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        /* The dots/bullets/indicators */
+
+        .dot {
+            cursor: pointer;
+            height: 13px;
+            width: 13px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+        /* Fading animation */
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+            to {
+                opacity: 1
+            }
+        }
+        /* On smaller screens, decrease text size */
+
+        @media only screen and (max-width: 300px) {
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
 </head>
 <!--bootstrap and CSS-->
 
@@ -25,51 +146,153 @@
             </ul>
         </div>
     </nav>
-<!--bootstrap navigation bar-->
+    <!--bootstrap navigation bar-->
 
     <div class="page-header">
-        <h1 style="color:#595B67">Gearhead 101: Understanding How Your Car’s Engine Works</h1>
-        <medium style="color:#595B67">--Brett | October 15, 2015</medium>
+        <h1 style="color:#595B67">The Safest cars in 2016</h1>
+        <medium style="color:#595B67">11-01-2016|Shangbang Wang</medium>
     </div>
-<!--bootstrap header-->
-    <div class="page2">
-        <img src="https://content.artofmanliness.com/uploads/2015/10/Engine-Header-1.jpg">
-        <p>I’ve never been a car guy. I just didn’t have any interest in tooling around under the hood to figure out how my car works. Except for replacing my air filters or changing the oil every now and then, if I ever had a problem with my car, I’d just
-            take it into the mechanic and when he came out to explain what was wrong, I nodded politely and pretended like I knew what he was talking about.
-        </p>
-        <p>But lately I’ve had the itch to actually learn the basics of how cars work. I don’t plan on becoming a full on grease monkey, but I want to have a basic understanding of how everything in my car actually makes it go. At a minimum, this knowledge
-            will allow me to have a clue about what the mechanic is talking about the next time I take my car in. Plus it seems to me that a man ought to be able to grasp the fundamentals of the technology he uses every day. When it comes to this website,
-            I know about how coding and SEO works; it’s time for me to examine the more concrete things in my world, like what’s under the hood of my car.</p>
-        <p>I figure there are other grown men out there who are like me — men who aren’t car guys but are a little curious about how their vehicles work. So I plan on sharing what I’m learning in my own study and tinkering in an occasional series we’ll call
-            Gearhead 101. The goal is to explain the very basics of how various parts in a car work and provide resources on where you can learn more on your own.</p>
-        <p>So without further ado, we’ll begin our first class of Gearhead 101 by explaining the ins and outs of the heart of a car: the internal combustion engine.</p>
-        <h3>The Internal Combustion Engine</h3>
-        <p>An internal combustion engine is called an “internal combustion engine” because fuel and air combust inside the engine to create the energy to move the pistons, which in turn move the car (we’ll show you how that happens in detail below).</p>
-        <p>Contrast that to an external combustion engine, where fuel is burned outside the engine and the energy created from that burning is what powers it. Steam engines are the best example of this. Coal is burned outside of the engine, which heats water
-            to produce steam, which then powers the engine.</p>
-        <p>Most folks think that in the world of mechanized movement, steam-powered external combustion engines came before the internal combustion variety. The reality is that the internal combustion engine came first. (Yes, the ancient Greeks messed around
-            with steam-powered engines, but nothing practical came from their experiments.)</p>
-        <p>In the 16th century, inventors created a form of internal combustion engine using gunpowder as the fuel to power the movement of the pistons. Actually, it wasn’t the gunpowder that moved them. The way this early internal combustion engine worked
-            was you’d stuff a piston all the way to the top of a cylinder and then ignite gunpowder beneath the piston. A vacuum would form after the explosion and suck the piston down the cylinder. Because this engine relied on the changes in air pressure
-            to move the piston, they called it the atmospheric engine. It wasn’t very efficient. By the 17th century, steam engines were showing a lot of promise, so the internal combustion engine was abandoned.</p>
-        <p>It wouldn’t be until 1860 that a reliable, working internal combustion engine would be invented. A Belgian fellow by the name of Jean Joseph Etienne Lenoir patented an engine that injected natural gas into a cylinder, which was subsequently ignited
-            by a permanent flame near the cylinder. It worked similarly to the gunpowder atmospheric engine, but not too efficiently.</p>
-        <p>Building on that work, in 1864 two German engineers named Nicolaus August Otto and Eugen Langen founded a company that made engines similar to Lenoir’s model. Otto gave up managing the company and started working on an engine design that he had
-            been toying with since 1861. His design led to what we now know as the four-stroke engine, and the basic design is still used in cars today.</p>
-        <h3>The antonomy of a Car Engine</h3>
-        <img src="https://content.artofmanliness.com/uploads/2015/10/Parts-of-Engine-2.jpg" style="border: solid; border-color:red">
-        <p>I’ll show you how the four-stroke engine works here in a bit, but before I do, I thought it would be helpful to go through the various parts of an engine so you’ll have an idea of what’s doing what in the four-stroke process. There is terminology
-            throughout these explanations that relies on other terms in the list, so don’t worry if you get confused at first. Read through the whole thing to get an overall grasp, and then read it again so you have a basic understanding of each piece
-            as it’s being talked about.</p>
-        <h3>The Four-Stroke Cycle</h3>
-        <img src="https://content.artofmanliness.com/uploads/2015/10/Four-Stroke-2.jpg" style="border: solid; border-color:red">
-        <p>The above illustration shows the four-stroke cycle in a single cylinder. This is going on in the other cylinders as well. Repeat this cycle a thousand times in a minute, and you get a car that moves.</p>
+    <!--bootstrap header-->
+    <div class="slideshow-container">
+
+        <div class="mySlides">
+            <div class="numbertext">1 / 12</div>
+            <img src="http://www3.autoimg.cn/newsdfs/g13/M09/8E/08/620x0_1_autohomecar__wKgH41gYPeiAF984ABEyXCZvndM134.jpg" style="width:100%">
+            <div class="text"><h1>Top 1</h1></div>
+            <p>Mercedes-Benz B level; failure rate of 2.8%; the average mileage of 41,000 km</p>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">2 / 12</div>
+            <img src="http://www3.autoimg.cn/newsdfs/g13/M14/8E/09/620x0_1_autohomecar__wKgH41gYPfOAY_6qAAXs5gkgxnE509.jpg" style="width:100%">
+            <div class="text">Top 2</div>
+            <p>Mercedes-Benz GLK level; failure rate of 2.9%; the average mileage of 52,000 km</p>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">3 / 12</div>
+            <img src="http://www3.autoimg.cn/newsdfs/g13/M07/8E/0A/620x0_1_autohomecar__wKgH41gYPfqADr_8AAP2V6ndTT8676.jpg" style="width:100%">
+            <div class="text">Top 3</div>
+            <p>Mercedes-Benz SLK level; failure rate of 3.1%; the average mileage of 29,000 km</p>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">4 / 12</div>
+            <img src="http://www2.autoimg.cn/newsdfs/g8/M13/90/85/620x0_1_autohomecar__wKgH3lgYPgKAGLWXAAGfe9M-9yo425.jpg" style="width:100%">
+            <div class="text">Top 4</div>
+            <p>Mercedes-Benz M-class; failure rate of 3.6%; the average mileage of 61,000 km</p>
+        </div>
+
+        <div class="mySlides">
+            <div class="numbertext">5 / 12</div>
+            <img src="http://www2.autoimg.cn/newsdfs/g8/M0B/8C/51/620x0_1_autohomecar__wKgHz1gYPgqAQK6DAA3VE2CVnfQ710.jpg" style="width:100%">
+            <div class="text">Top 5</div>
+            <p>Porsche 911; failure rate of 3.6%; the average mileage of 3.1 million km</p>
+        </div>
+
+        <div class="mySlides">
+              <div class="numbertext">6 / 12</div>
+              <img src="http://www2.autoimg.cn/newsdfs/g22/M08/6D/4F/620x0_1_autohomecar__wKjBwVgYPhSATwLWAAyHimW0o0g400.jpg" style="width:100%">
+              <div class="text">Top 6</div>
+              <p>Audi Q5; failure rate of 3.7%; the average mileage of 60,000 km</p>
+          </div>
+
+          <div class="mySlides">
+              <div class="numbertext">7 / 12</div>
+              <img src="http://www3.autoimg.cn/newsdfs/g22/M11/6E/61/620x0_1_autohomecar__wKgFW1gYPhyABL4yAAH9ePlMloA948.jpg" style="width:100%">
+              <div class="text">Top 7</div>
+              <p>Mercedes-Benz C level; failure rate of 3.7%; average mileage of 58,000 km</p>
+          </div>
+
+          <div class="mySlides">
+              <div class="numbertext">8 / 12</div>
+              <img src="http://www2.autoimg.cn/newsdfs/g22/M0F/6A/3A/620x0_1_autohomecar__wKgFVlgYPiuARRJBACkaApq7fb4765.png" style="width:100%">
+              <div class="text">Top 8</div>
+              <p>Mercedes-Benz E-class Coupe; failure rate of 4.2%; average mileage of 42,000 km</p>
+          </div>
+
+          <div class="mySlides">
+              <div class="numbertext">9 / 12</div>
+              <img src="http://www3.autoimg.cn/newsdfs/g11/M00/89/92/620x0_1_autohomecar__wKgH0lgYPjWAC5U3AAecf7f_a7s536.jpg" style="width:100%">
+              <div class="text">Top 9</div>
+              <p>Audi A1; failure rate of 4.4%; the average mileage of 36,000 km</p>
+          </div>
+
+          <div class="mySlides">
+              <div class="numbertext">10 / 12</div>
+              <img src="http://www2.autoimg.cn/newsdfs/g11/M14/8C/B9/620x0_1_autohomecar__wKjBzFgYPj6AfqKLAAYamUe98iM106.jpg" style="width:100%">
+              <div class="text">Top 10</div>
+              <p>Audi A6; failure rate of 4.4%; the average mileage of 8.0 million km</p>
+          </div>
+
+          <div class="mySlides">
+              <div class="numbertext">11 / 12</div>
+              <img src="http://www2.autoimg.cn/newsdfs/g11/M0F/89/96/620x0_1_autohomecar__wKgH0lgYPkWANguMAAYOMMXEu2c627.jpg" style="width:100%">
+              <div class="text">Top 11</div>
+              <p>Toyota Yaris; failure rate of 4.4%; the average mileage of 3.1 million km</p>
+          </div>
+
+          <div class="mySlides">
+              <div class="numbertext">12 / 12</div>
+              <img src="http://www2.autoimg.cn/newsdfs/g17/M11/87/06/620x0_1_autohomecar__wKjBxlgYPk6ADYDTAAwfe8ssHZw461.jpg" style="width:100%">
+              <div class="text">Top 12</div>
+              <p>Volvo XC60; failure rate of 4.5%; the average mileage of 65,000 km</p>
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
     </div>
-<!--content: pictures and passage-->
+    <br>
 
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+        <span class="dot" onclick="currentSlide(7)"></span>
+        <span class="dot" onclick="currentSlide(8)"></span>
+        <span class="dot" onclick="currentSlide(9)"></span>
+        <span class="dot" onclick="currentSlide(10)"></span>
+        <span class="dot" onclick="currentSlide(11)"></span>
+        <span class="dot" onclick="currentSlide(12)"></span>
+    </div>
 
-    <script src="https://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
 </body>
 
 </html>

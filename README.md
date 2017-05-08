@@ -43,8 +43,8 @@ I have a practice page to test their knowledge of traffic regulations. I also pl
 ![Index](/Index.png)
 ![The safest cars](/safestcarlists.png)
 ![Car brands](/carbrands.png)
-![Practice](/Practice.png)
+![Practice](/practice1.png)
 ![Tutor video & Causes of car accidents](/tutorvideo.png)
-![Game](/practice.png)
+![Game](/practice1.png)
 # Reflection
 For the final project, I used several Javascript functions in the website. It is really difficult for me at very first because what I have learnt on Codeacademy is a little bit disconnected to the real experience. I didn't learn how to import Javascript into my project but I learnt it in class. As we learnt in class, Javascript provides functions for our websites. It is really excited to see that the Javascript I put in my website makes my page more interactive and have more real functions such as count the success rate for the practice. My midterm experience has taught me that I should inspect every small part of my pages to avoid making mistakes. I have used bootstrap for my midterm project, and it gives me basic understanding of how to Javascript because it is quite similar of the way how to use them in my code.  

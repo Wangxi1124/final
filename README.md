@@ -38,7 +38,7 @@ I have a practice page to test their knowledge of traffic regulations. I also pl
 * Functional specifications: Functions of this website can be divided into four parts. The first part is to provide users with more knowledge about cars, like the list of safest cars and car brands to help them better understand the construction of cars and know more about different car brands. The safest car list can help them to choose a safe car to buy. The second part is to raise people’s awareness of the importance of driving safety. The third part aimed at providing some online courses for users who want to learn driving from internet before they start to drive the real car. The third part is for novice drivers or potential drivers to practice or learn the U.S traffic regulations. The last part is a little racing game to engage more users to use our website.
 * Content specifications: users who enter our website will see the text on the head image “Do you know how to drive safely?”. This slogan provides our users with a basic idea of what our website will provide for them. From the homepage’s navigation bar, users can choose what they want to explore more. If users want to learn more about cars, they can have the chance to learn more about what are the safest cars and car brands. If they want to learn the causes of car accidents, the website provides them with six different reasons and each cause have a video to further illustrate it. If they want to relax for a while, they can play a racing game, which connected to the reasons of car accidents. The racing game is aimed at raising the safety awareness of driving.
 # Structure
-![Structure](/structure.jpg)
+![Structure](/structure.png)
 # Skeleton
 ![Index](/Index.png)
 ![The safest cars](/safestcarlists.png)
